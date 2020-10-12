@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>T E N N I S</title>
+
+			<style>
+                    a:link {
+                    color: gold;
+                    }
+                    a:visited {
+                    color: gold;
+                    }
+                /* TEXT AND CROWD */
+
+                body{
+                    background-color:rgb(0, 0, 0);
+                    color:gold;
+                    font-size: 3vw;
+                    text-align: center;
+                    font-family: "monospace"
+                   
+                }
+                divSig {
+                    color:rgba(255, 255, 255, 0.678);
+                    position: absolute;
+                    font-size: 1vw;
+                    left: 42vw;
+                    padding-top: 8vh;
+                }
+                divCrowd {
+                    color:rgba(0, 0, 0, 0.678);
+                    position: absolute;
+                    font-size: 2.5vw;
+                    animation-name: crowd;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    z-index:-19;
+                    
+                }
+                divFaceL {
+                    color:rgba(0, 0, 0, 0.678);
+                    position: absolute;
+                    font-size: 1vw; 
+                    font-weight: 600;
+                    transform: scaleX(2.5); 
+                    left: 11.5vw;
+                    bottom: 62vh;
+                    z-index:-3;
+                    font-family: "monospace", sans-serif;
+                    
+                }
+
+                divFaceR {
+                    color:rgba(0, 0, 0, 0.678);
+                    position: absolute;
+                    font-size: 1vw; 
+                    font-weight: 600;
+                    transform: scaleX(3); 
+                    left: 91.5vw;
+                    bottom: 62vh;
+                    z-index:-3;
+                    font-family: "monospace", sans-serif;
+                    
+                }
+
+                /* END TEXT */
+               
+                /* BACKGROUND */
+               
+                @keyframes crowd {
+                0%   {left:33vw; top:33vh;}
+                25%  {left:34vw; top:32vh;}
+                50%  {left:33vw; top:33vh;}
+                75%  {left:32vw; top:32vh;}
+                100% {left:33vw; top:33vh;} 
+            }
+                .SkyCourt {
+			    	position:absolute;
+			    	width:100%;
+				    height:50%;	
+				    
+			    }
+                #Sky {
+				    background-color:rgb(72, 156, 235);
+				    left:0%;
+				    top:0%;
+                    z-index:-20;
+		    	} 
+                 #Court {
+				    background-color:rgb(102, 136, 82);
+				    left:0%;
+				    bottom:0%;
+                    z-index:-18;
+		    	}
+                .Bleacher {
+				    position:absolute;
+                    width:40vw;
+				    height:20vh;	
+				    z-index:-19;
+                    background-color:rgb(197, 139, 92);
+				    left:30vw;
+				    bottom:50vh;
+		    	}
+                .bleacherleft {
+                    position:absolute;
+                    left: 20vw;
+                    bottom: 45vh;
+                    width: 40vw;
+                    height: 0;
+                    border-bottom: 20vh solid rgb(197, 139, 92);
+                    border-left: 10vw solid transparent;
+                    z-index:-19;
+                }
+                .bleacherright {
+                    position:absolute;
+                    left: 70vw;
+                    bottom: 45vh;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 20vh solid rgb(197, 139, 92);
+                    border-right: 10vw solid transparent;
+                    z-index:-19;
+                }
+                
+                .CourtWhiteHorizontalThin {
+                    position:absolute;
+			    	width:100vw;
+				    height:1vh;	
+				    z-index:-18;
+                }
+                
+                .CourtWhiteHorizontalThick {
+                    position:absolute;
+			    	width: 100vw;;
+				    height:2vh;	
+				    z-index:-18;
+                }
+
+                .CourtWhiteHorizontalMid {
+                    position:absolute;
+			    	width: 100vw;;
+				    height:1.5vh;	
+				    z-index:-18;
+                }
+                #WhiteHorMid {
+                    background-color:rgb(255, 255, 255);
+                    left:0%;
+                    bottom: 30vh;
+                }
+                #WhiteHor1 {
+                    background-color:rgb(255, 255, 255);
+                    left:0%;
+                    bottom: 48.5vh;
+                }
+
+                #WhiteHor2 {
+                    background-color:rgb(255, 255, 255);
+                    left:0%;
+                    bottom: 45vh;
+                }
+
+                #WhiteHor3 {
+                    background-color:rgb(255, 255, 255);
+                    left:0%;
+                    bottom: 10vh;
+                }
+
+                #WhiteHor4 {
+                    background-color:rgb(255, 255, 255);
+                    left:0%;
+                    bottom: 0%;
+                }
+
+
+                .Net {
+                    position: absolute;
+                    left: 47.5vw;
+                    bottom: 0;
+                    border-bottom: 55vh solid rgb(100, 69, 69);
+                    border-left: 1vw solid transparent;
+                    border-right: 1vw solid transparent;
+                    height: 18.5vh;
+                    width: 1vw;
+                    padding-top: 100vh;
+                    z-index:-17;
+
+                }
+
+                .FlagpoleL {
+                    position:absolute;
+			    	width:1.5vw;
+				    height:35vh;	
+				    z-index:-18;
+                    background-color:rgb(221, 218, 46);
+                    left:25vw;
+                    bottom: 50vh;
+                }
+                .flagl {
+                    position:absolute;
+                    left: 18vw;
+                    bottom: 78vh;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 7vh solid rgb(197, 92, 92);
+                    border-left: 7vw solid transparent;
+                    z-index:-19;
+                }
+
+                .flagr {
+                    position:absolute;
+                    left: 74vw;
+                    bottom: 78vh;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 7vh solid rgb(197, 92, 92);
+                    border-right: 7vw solid transparent;
+                    z-index:-19;
+                }
+
+                .FlagpoleR {
+                    position:absolute;
+			    	width:1.5vw;
+				    height:35vh;	
+				    z-index:-18;
+                    background-color:rgb(221, 218, 46);
+                    left:73vw;
+                    bottom: 50vh;
+                }
+
+                /* END BACKGROUND */
+               
+                /* MEN */
+
+                .Heads {
+				    position:absolute;
+                    width:5vw;
+				    padding-top: 10vh;
+                    border-radius: 50vw;
+				    z-index:-5;
+		    	}
+
+                #HeadL {
+                    background-color:rgb(233, 193, 181);
+				    left:9.5vw;
+				    bottom:60vh;
+                }
+
+                #HeadR {
+                    background-color:rgb(77, 50, 42);
+				    left:90vw;
+				    bottom:60vh;
+                }
+
+                .Bodies {
+				    position:absolute;
+                    width:7vw;
+				    padding-top: 20vh;
+                    border-radius: 30vw;
+				    z-index:-16;
+		    	}
+
+                #BodyL {
+                    background-color:rgb(15, 72, 146);
+				    left:8vw;
+				    bottom:42vh;
+                }
+
+                #BodyR {
+                    background-color:rgb(180, 52, 52);
+				    left:90vw;
+				    bottom:42vh;
+                }
+                .Shorts {
+				    position:absolute;
+                    width: 3vw;
+				    padding-top: 10vh;
+                    border-radius: 30vw;
+				    z-index:-16;
+		    	}
+
+                #ShortsLL {
+                    background-color:rgb(180, 115, 62);
+				    left:8vw;
+				    bottom:35vh;
+                    
+                }
+                #ShortsLR {
+                    background-color:rgb(134, 86, 46);
+				    left:12vw;
+				    bottom:35vh;
+                    z-index:-17;
+                   
+                }
+                #ShortsRL {
+                    background-color:rgb(46, 124, 85);
+				    left:90vw;
+				    bottom:35vh;
+                    z-index:-17;
+                }
+                #ShortsRR {
+                    background-color:rgb(56, 153, 105);
+				    left:94vw;
+				    bottom:35vh;
+                }
+                
+                .Legs {
+				    position:absolute;
+                    width:2vw;
+				    padding-top: 20vh;
+                    border-radius: 30vw;
+				    z-index:-17;
+		    	}
+
+                #LegLL {
+                    background-color:rgb(233, 193, 181);
+				    left:8.5vw;
+				    bottom:20vh;
+                }
+                #LegLR {
+                    background-color:rgb(189, 157, 148);
+				    left:12.5vw;
+				    bottom:20vh;
+                    z-index: -18;
+                    
+                }
+                #LegRL {
+                    background-color:rgb(59, 39, 32);
+				    left:90.5vw;
+				    bottom:20vh;
+                    z-index: -18;
+                }
+                #LegRR {
+                    background-color:rgb(77, 50, 42);
+				    left:94.5vw;
+				    bottom:20vh;
+                }
+
+                .Arms {
+                    position:absolute;
+                    width:2vw;
+                    height:10vh;
+				    padding-top: 10vh;
+                    border-radius: 30vw;
+                    
+                }
+
+                #ArmLL {
+                    background-color:rgb(233, 193, 181);
+				    transform: rotate(-40deg);
+                    left:11vw;
+				    bottom:35vh;
+                    animation-name: ArmLL;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    z-index:-15;
+                }
+
+                @keyframes ArmLL {
+                0%   {left: 12vw; bottom: 37vh;}
+                40%  {left:5vw; bottom:37vh; transform: rotate(40deg);}
+                100% {left:12vw; bottom:37vh;} 
+                }
+
+                #ArmLR {
+                    background-color:rgb(194, 160, 151);
+				    left:7vw;
+				    bottom:25vh;
+                    animation-name: ArmLR;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    z-index:-17;
+                }
+                @keyframes ArmLR {
+                0%   {left: 13vw; top:25vh;}
+                40%  {left:18vw; top:31vh;transform: rotate(90deg)}
+                100% {left:13vw; top:25vh;} 
+                }
+               
+                #ArmRL {
+                    background-color:rgb(63, 41, 34);
+                    animation-name: ArmRL;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    animation-timing-function: linear;
+                    z-index:-18;
+                }
+
+                @keyframes ArmRL {
+                0%   {left:94vw; bottom:40vh;transform:rotate(-45deg)} 
+                30%  {left:91vw; bottom:39vh;transform: rotate(45deg)}  
+                50%  {left:88vw; bottom:38vh;transform: rotate(45deg)}  
+                100% {left:94vw; bottom:40vh;transform:rotate(-45deg)} 
+                }
+
+                #ArmRR {
+                    background-color:rgb(77, 50, 42);
+                    animation-name: ArmRR;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    animation-timing-function: linear;
+                    z-index:-1;
+                }
+
+                @keyframes ArmRR {
+                0%   {left:92.5vw; bottom:40vh;transform:rotate(45deg)} 
+                50%  {left:95vw; bottom:38vh;transform: rotate(0deg)}  
+                80%  {left:90vw; bottom:46vh;transform: rotate(90deg)}
+                100% {left:92.5vw; bottom:40vh;transform:rotate(45deg)} 
+                }
+
+                
+
+                .ShoeLL{
+                    position:absolute;
+                    left:8vw;
+				    bottom:20vh;
+                    width: 3vw;
+                    height: 70vh;
+                    border-bottom: 3vw solid rgb(15, 72, 146);
+                    border-right: 5vw solid transparent;
+                    z-index:-15;
+                }
+                .ShoeLR{
+                    position:absolute;
+                    left:12vw;
+				    bottom:20vh;
+                    width: 3vw;
+                    height: 70vh;
+                    border-bottom: 3vw solid rgb(25, 58, 102);
+                    border-right: 5vw solid transparent;
+                    z-index:-16;
+                }
+
+                .ShoeRL{
+                    position:absolute;
+                    left:85vw;
+				    bottom:20vh;
+                    width: 3vw;
+                    height: 70vh;
+                    border-bottom: 3vw solid rgb(134, 27, 13);
+                    border-left: 5vw solid transparent;
+                    z-index:-16;
+                }
+                .ShoeRR{
+                    position:absolute;
+                    left:89vw;
+				    bottom:20vh;
+                    width: 3vw;
+                    height: 70vh;
+                    border-bottom: 3vw solid rgb(194, 39, 19);
+                    border-left: 5vw solid transparent;
+                    z-index:-15;
+                }
+                
+                
+
+                /* END MEN */
+                
+                .Handles  {
+				    position:absolute;
+                    width:1.5vw;
+				    padding-top: 18vh;
+                    border-radius: 50vw;
+				    z-index:-16;
+		    	}
+
+                #HandleL {
+                    background-color:rgb(31, 46, 33);
+                    animation-name: HandleL;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    
+                }
+                
+                @keyframes HandleL {
+                0%   {left: 10vw; top:16vh; transform: rotate(-90deg);}
+                40%  {left:26vw; top:31vh;transform: rotate(90deg);}
+                70% {top: 18vh;}
+                100% {left:10vw; top:16vh; transform: rotate(-90deg);} 
+                }
+
+                #HandleR {
+                    background-color:rgb(161, 121, 35);
+                    animation-name: HandleR;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    animation-timing-function: linear;
+                    z-index:-11;
+                    
+                }
+
+                @keyframes HandleR {
+                0%   {left:87vw; bottom:32vh;transform:rotate(45deg)} 
+                50%  {left:94vw; bottom:22vh;transform: rotate(0deg)} 
+                65%  {left:89vw; bottom:35vh;transform: rotate(45deg)} 
+                80%  {left:81vw; bottom:45vh;transform: rotate(90deg)}
+                100% {left:87vw; bottom:32vh;transform:rotate(45deg)} 
+                }
+
+                .Rackets  {
+				    position:absolute;
+                    width:5vw;
+				    padding-top: 15vh;
+                    border-radius: 50vw;
+				    z-index:-16;
+		    	}
+
+                #RacketL {
+                    background-color:rgb(112, 212, 102);
+                    animation-name: RacketL;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    
+                }
+                
+                @keyframes RacketL {
+                0%   {left: 3vw; top:19vh; transform: rotate(-90deg);}
+                20% {top: 22vh;}
+                40%  {left:32vw; top:32vh;transform: rotate(90deg);}
+                70% {top: 15vh;}
+                100% {left:2vw; top:18vh; transform: rotate(-90deg);} 
+                
+                }
+
+                #RacketR {
+                    background-color:rgb(231, 165, 23);
+                    animation-name: RacketR;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    animation-timing-function: linear;
+                    z-index:-10;
+
+                    
+                }
+
+                @keyframes RacketR {
+                0%   {left:82vw; bottom:30vh;transform:rotate(45deg)} 
+                50%  {left:92vw; bottom:15vh;transform: rotate(0deg)} 
+                65%  {left:83vw; bottom:30vh;transform: rotate(45deg)} 
+                80%  {left:72vw; bottom:45vh;transform: rotate(90deg)}
+                100% {left:82vw; bottom:30vh;transform:rotate(45deg)} 
+                }
+
+                .Ball  {
+				    position:absolute;
+                    width:3vw;
+				    padding-top: 6vh;
+                    border-radius: 50vw;
+				    z-index:-1;
+                    background-color:rgb(247, 243, 12);
+                    animation-name: Ball;
+                    animation-duration: 1s;
+                    animation-iteration-count:infinite;
+                    animation-timing-function: linear;
+		    	}
+
+                @keyframes Ball {
+                0% { left: 55%; top: 0%;}
+                25% {left: 30%; top: 35%;} 
+                50% {left:65%; top: 75%;}
+                75% {left: 75%; top: 45%;}
+                100% { left: 55%; top: 0%;}
+                
+                }
+
+               
+
+			</style>
+
+	</head>
+
+	<body>
+        <a href="index.html">
+        LOVE / LOVE
+        </a>
+        
+        
+        <div class="SkyCourt" id="Sky"></div>
+        <div class="SkyCourt" id="Court"></div>
+        <div class="Bleacher"></div>
+        <div class="bleacherright"></div>
+        <div class="bleacherleft"></div>
+        <div class="Net"></div>
+        <div class="CourtWhiteHorizontalThin" id="WhiteHor1"></div>
+        <div class="CourtWhiteHorizontalThin" id="WhiteHor2"></div>
+        <div class="CourtWhiteHorizontalThick" id="WhiteHor3"></div>
+        <div class="CourtWhiteHorizontalThick" id="WhiteHor4"></div>
+        <div class="CourtWhiteHorizontalMid" id="WhiteHorMid"></div>
+        <div class="Heads" id="HeadL"></div>
+        <div class="Heads" id="HeadR"></div>
+        <div class="Bodies" id="BodyL"></div>
+        <div class="Bodies" id="BodyR"></div>
+        <div class="Shorts" id="ShortsLL"></div>
+        <div class="Shorts" id="ShortsLR"></div>
+        <div class="Shorts" id="ShortsRL"></div>
+        <div class="Shorts" id="ShortsRR"></div>
+        <div class="Legs" id="LegLL"></div>
+        <div class="Legs" id="LegLR"></div>
+        <div class="Legs" id="LegRL"></div>
+        <div class="Legs" id="LegRR"></div>
+        <div class="Arms" id="ArmLL"></div>
+        <div class="Arms" id="ArmLR"></div>
+        <div class="Arms" id="ArmRL"></div>
+        <div class="Arms" id="ArmRR"></div>
+        <div class="Handles" id="HandleL"></div>
+        <div class="Handles" id="HandleR"></div>
+        <div class="Rackets" id="RacketL"></div>
+        <div class="Rackets" id="RacketR"></div>
+        <div class="ShoeLL"></div>
+        <div class="ShoeLR"></div>
+        <div class="ShoeRL"></div>
+        <div class="ShoeRR"></div>
+        <div class="Ball"></div>
+        <div class="FlagpoleL"></div>
+        <div class="FlagpoleR"></div>
+        <div class="flagl"></div>
+        <div class="flagr"></div>
+
+
+        <divSig>
+            Gian Fiorenzo 2020 100% HTML/CSS
+        </divSig>
+        <divCrowd>
+           o 0 oo 0 o o 0 o o o o o 0 o o o o <br>  o 0 o 00 oo o o o o o o 0 o o <br> o 0 oo 0 o o 0 o o o o o 0 o o o o 
+        </divCrowd>
+
+        <divFaceL>
+            X X 
+            <br>
+            >
+            <br>
+                0
+        </divFaceL>
+
+        <divFaceR>
+            0 0 
+            <br>
+             <
+            <br>
+                U
+        </divFaceR>
+        
+	</body>
+
+</html>
