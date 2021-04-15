@@ -68,9 +68,14 @@
 
         }
 
+        .bottomright {
+            right: 2.5vw;
+            position: absolute;
+        }
+
         img.animated-gif {
             width: 97.5vw;
-            height: 70vh;
+            height: 65vh;
             margin: auto;
         }
 
@@ -88,18 +93,25 @@
         footer {
             color: white;
             position: absolute;
-            font-size: 2vw;
-            padding-bottom: 1vh;
+            font-size: 4vh;
+            padding-bottom: 0vh;
             margin: 0;
             font-family: 'CaladeaRegular';
             font-weight: normal;
             font-style: normal;
+            left: 2.5vw;
+            padding-top: 50px;
         }
 
         .flexer {
             
             display: flex;
             justify-content: space-between;
+        }
+        .bottomflex {
+            display:flex;
+            justify-content: start;
+            
         }
 
     </style>
@@ -110,10 +122,10 @@
 
     <div class="flexer">
 
-       
-            <img id="Images" src="name_icon.jpg"
-                 height="120">
-        
+
+        <img id="Images" src="name_icon.jpg"
+             height="120">
+
 
         <div class="right">
 
@@ -134,23 +146,24 @@
                 <img id="Images" src="linkedin.png"
                      height="110">
             </a>
+
+        </div>
+    </div>
+    <br>
+
+    <img class="animated-gif" src="web_gif.gif">
+    <div class="bottomflex">
+        <footer>
+            Copyright 2021
+        </footer>
+
+        <div class="bottomright">
             <a id="under" href="mailto:gian.fiorenzo@gmail.com">
                 <img id="Images" src="email_icon.png"
                      height="110">
             </a>
-
         </div>
     </div>
-        <br>
-
-        <img class="animated-gif" src="web_gif.gif">
-
-        <footer>
-            Eugene OR
-            <br>
-            Copyright 2021
-        </footer>
-
 </body>
 
 </html>
